@@ -1,4 +1,5 @@
 \section{Técnicas}
+\metroset{block=fill}
 
 \begin{frame}{Geração de Relevo}
     \begin{itemize}[<+- | alert@+>]
@@ -11,11 +12,12 @@
 \end{frame}
 
 \begin{frame}{Noise}
-    Definição:
-    \begin{itemize}
-        \item Ponto: $Point \in \{ \mathbb{R}^3 \vee \mathbb{R}^2 \vee \mathbb{R}\} $
-        \item $ -1 \leq noise(Point) \leq 1$
-    \end{itemize}
+    \begin{block}{Definição}
+        \begin{itemize}
+            \item Ponto: $Point \in \{ \mathbb{R}^3 \vee \mathbb{R}^2 \vee \mathbb{R}\} $
+            \item $ -1 \leq noise(Point) \leq 1$
+        \end{itemize}
+    \end{block}
 \end{frame}
 
 \begin{frame}{Noise}
@@ -39,11 +41,13 @@
 
 
 \begin{frame}{Ruído de Perlin}
-    Definição:
     \begin{itemize}
         \item Quantidade de oitavas: $\theta \in \mathbb{N}$
     \end{itemize}
-    $$perlinNoise(Point, \theta) = \sum_{t=0}^{t=\theta} \frac{Noise(Point \cdot 2^{t})}{2^{t}}$$
+    
+    \begin{block}{Definição}
+        $$perlinNoise(Point, \theta) = \sum_{t=0}^{t=\theta} \frac{Noise(Point \cdot 2^{t})}{2^{t}}$$
+    \end{block}
 \end{frame}
 
 
@@ -80,10 +84,11 @@
 \end{frame}
 
 \begin{frame}{Ruído de Perlin}
-    Temos:
-    $$\sum_{t=0}^{t=\theta} \frac{Noise(Point \cdot 2^{t})}{2^{t}}$$
-    Caso de borda $Noise(Point) = 1$:
-    $$\sum_{t=0}^{t=\theta} \frac{1}{2^{t}} = 2^{-\theta} (2^{\theta +1}-1)$$
+    \begin{block}{Caso de borda}
+        $$\sum_{t=0}^{t=\theta} \frac{Noise(Point \cdot 2^{t})}{2^{t}}$$
+        $$Noise(Point) = 1$$
+        $$\sum_{t=0}^{t=\theta} \frac{1}{2^{t}} = 2^{-\theta} (2^{\theta +1}-1)$$
+    \end{block}
 \end{frame}
 
 
@@ -96,12 +101,14 @@
     \end{equation*}
 \end{frame}
 
-%mostrar dimenções e manipulações do ruido
 
-
-%limitações, é realmente infinito?
-
-% Carregar apenas área perto do jogador
+\begin{frame}{Ruído de Perlin}
+    \begin{figure}
+		\centering
+        \includegraphics[width=.7\textwidth]{img/explain/farLands.jpg}
+        \caption{Limitações}
+    \end{figure}
+\end{frame}
 
 % Mostrar o que é tesselation
 

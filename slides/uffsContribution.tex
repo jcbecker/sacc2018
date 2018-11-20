@@ -43,7 +43,7 @@
                 \item Montanhas
                 \item Vales
                 \item Deserto
-                \item Cânyons
+                \item Cânions
             \end{itemize}
         \item Distribuição dos Biomas
         \item Suavização das fronteiras
@@ -51,27 +51,59 @@
 \end{frame}
 
 \begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
-  \begin{figure}
+    \begin{figure}
 		\centering
         \includegraphics[width=.8\textwidth]{img/uffs/bssMontains.png}
-        \caption{Montanhas}
-  \end{figure}
+        \caption{Montanhas, $h = 1.5^{h'\cdot 7}\cdot 5$}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
-  \begin{figure}
+    \begin{figure}
+		\centering
+        \includegraphics[width=.8\textwidth]{img/uffs/bssCanyons.png}
+        \caption{Cânions, $h = (1.5^{clamp(h', -0.3, 0.3) \cdot 14}) \cdot 5 + h' \cdot 8$}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
+    \begin{figure}
+		\centering
+        \includegraphics[width=.8\textwidth]{img/uffs/bssDesert.png}
+        \caption{Deserto, $h = h' \cdot 16$}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
+    \begin{figure}
+		\centering
+        \includegraphics[width=.8\textwidth]{img/uffs/bssPlains.png}
+        \caption{Planícies, $h = h' \cdot 10$}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
+    \begin{figure}
+		\centering
+        \includegraphics[width=.8\textwidth]{img/uffs/bssValley.png}
+        \caption{Vales, $h = ($clamp($h', -0.5, 1.0$)$\cdot 5)^{3}$}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
+    \begin{figure}
 		\centering
         \includegraphics[width=.8\textwidth]{img/uffs/biomesdistnoise.png}
         \caption{Distribuição de Biomas}
-  \end{figure}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
-  \begin{figure}
+    \begin{figure}
 		\centering
         \includegraphics[width=.8\textwidth]{img/uffs/256f4.png}
         \caption{Distribuição de Biomas}
-  \end{figure}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
@@ -126,37 +158,36 @@
 \end{frame}
 
 \begin{frame}{Geração de Terrenos com Biomas Distintos para Jogos}
-  \begin{figure}
+    \begin{figure}
 		\centering
         \includegraphics[width=.8\textwidth]{img/uffs/interpolationArea/interpolation.png}
         \caption{Com interpolação}
-  \end{figure}
+    \end{figure}
 \end{frame}
 
 
 % Trabalho do Fernando
-\begin{frame}{Fernando}
-  \begin{figure}
+\begin{frame}{Gerador de costas}
+    \begin{figure}
 		\centering
-        \includegraphics[width=.8\textwidth]
-        {img/uffs/fernando/linearcosta.png}
+        \includegraphics[width=.8\textwidth]{img/uffs/fernando/linearcosta.png}
         \caption{Costa linear.}
-  \end{figure}
+    \end{figure}
 \end{frame}
 
-\begin{frame}{Fernando}
-  \begin{figure}
+\begin{frame}{Gerador de costas}
+    \begin{figure}
 		\centering
         \includegraphics[width=.8\textwidth]{img/uffs/fernando/metodo.png}
         \caption{Método.}
-  \end{figure}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Fernando}
-  \begin{figure}
+    \begin{figure}
 		\centering
         \includegraphics[width=.8\textwidth]
         {img/uffs/fernando/costaorganica.png}
         \caption{Costa orgânica.}
-  \end{figure}
+    \end{figure}
 \end{frame}
