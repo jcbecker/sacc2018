@@ -1,0 +1,58 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage[portuguese]{babel}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{Geração Procedural de Terrenos para Jogos}
+% \subtitle{A modern beamer theme}
+\date{\today}
+% \date{}
+\author{João Carlos Becker}
+% \institute{Center for modern beamer themes}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+% debug: Caso precisar de sumário
+% \begin{frame}{Table of contents}
+%   \setbeamertemplate{section in toc}[sections numbered]
+%   \tableofcontents[hideallsubsections]
+% \end{frame}
+
+\input{slides/intro}
+
+\input{slides/uffsContribution.tex}
+
+\input{slides/howExplained.tex}
+
+% Capítulo com jogos em produção que usam Geração procedural de terreno
+
+% Usado para parar a contagem na barra de progresso e paginação
+\appendix
+
+{\setbeamercolor{palette primary}{fg=black, bg=white}
+\begin{frame}[standout]
+  Dúvidas?
+\end{frame}
+}
+
+\begin{frame}[allowframebreaks]{Refêrencias}
+
+  \bibliography{demo}
+  \bibliographystyle{apalike}
+
+\end{frame}
+
+\end{document}
