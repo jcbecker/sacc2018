@@ -1,5 +1,5 @@
 #pdf generate in root path
-mainSACC.pdf
+#mainSACC.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
